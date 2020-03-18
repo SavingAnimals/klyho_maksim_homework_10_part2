@@ -1,0 +1,129 @@
+body {margin: 0;
+padding: 0;
+font-family: 'Lato', sans-serif;
+}
+
+.wraper {text-align: center;
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+.wraper h1, h3 {
+    font-weight: bold;
+}
+
+.wraper>p {
+    max-width: 570px;
+    width: 100%;
+    margin: 40px auto 40px auto;
+    font-size: 16px;
+    color: #3c3c3c;
+}
+
+h1 {
+    color: #3c3c3c;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 18px;
+    color: #282528;
+    margin-bottom: 5px;
+}
+
+.cell>p {
+    line-height: 18px;
+    font-size: 14px;
+    color: #646464;
+    margin: 0 0 20px 0;
+}
+
+.line {width: 45px;
+height: 4px;
+margin: 0 auto;
+background-color: #dddbdb;
+}
+
+
+.persons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cell {text-align: left;
+        min-width: 270px;
+        position: relative;
+}
+
+.cell img {width: 270px;}
+
+.cell .pers1, .pers2, .pers3, .pers4 {
+    margin: 0;
+    padding: 0;
+}
+
+.pers-alternate {display: flex;
+    justify-content: center;
+    width: 270px;
+    height: 0px;
+    background-color: #2b81ac;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.pers-alternate a {
+    
+   
+    margin: auto 2px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+background-color: #5ecbe7;
+color: white;
+font-size: 24px;
+}
+
+.cell:hover .pers-alternate {
+    width: 270px;
+    height: 270px;
+    transition: ease-in-out;
+    transition-duration: 0.4s;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.pers1 {
+    width: 270px;
+    height: 270px;
+    background-image: url(../images/pers2.jpg);
+}
+    
+.pers2 {
+     width: 270px;
+     height: 270px;
+     background-image: url(../images/pers2.jpg);
+    }
+
+.pers3 {
+    width: 270px;
+    height: 270px;
+    background-image: url(../images/pers3.jpg);
+}
+
+.pers4 {
+    width: 270px;
+    height: 270px;
+    background-image: url(../images/pers4.jpg);}
+
+
